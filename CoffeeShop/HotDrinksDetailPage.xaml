@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CoffeeShop.HotDrinksDetailPage">
+
+    <NavigationPage.TitleView>    
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center"  Orientation="Horizontal">    
+            <Label HorizontalOptions="Center" TextColor="White" FontSize="20" FontAttributes="Bold" VerticalTextAlignment="Center" Text="Hot Drinks"/>  
+        </StackLayout>    
+    </NavigationPage.TitleView>   
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+           
+            <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10" Margin="0,5,0,0">
+            <Label
+                Text="Blonde Cafe Latte                     $2.50"
+                TextColor="Black"
+                FontSize="25"
+                BackgroundColor="Transparent"/>
+            </Frame>
+              <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Label
+                Text="Caramel Macchiato                  $2.50"
+                TextColor="Black"
+                FontSize="25"
+                BackgroundColor="Transparent"/>
+        </Frame>
+              <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Label
+                Text="Skinny Mocha                            $2.50"
+                TextColor="Black"
+                FontSize="25"
+                BackgroundColor="Transparent"/>
+        </Frame>
+             <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Label
+                Text="Hot Coffee                                  $2.50"
+                TextColor="Black"
+                FontSize="25"
+                BackgroundColor="Transparent"/>
+        </Frame>
+             <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Label
+                Text="Irish Coffee                                 $2.50"
+                TextColor="Black"
+                FontSize="25"
+                BackgroundColor="Transparent"/>
+        </Frame>
+             <Button
+                Text="Back"
+                Margin="0,258"
+                x:Name="backButton"
+                Clicked="backButton_Clicked">
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

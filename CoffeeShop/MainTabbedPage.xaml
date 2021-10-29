@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.MainTabbedPage">
+  <!--Pages can be added as references or inline-->
+  <ContentPage Title="Menu" BackgroundColor="Black">
+       <StackLayout>
+         <Frame BackgroundColor="Black" VerticalOptions="CenterAndExpand">
+            <Image
+                Source="logo.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="200"
+                WidthRequest="200"/>
+        </Frame>
+
+        <!--Coffee Choices Buttons-->
+
+        <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Button
+                Text="Espresso"
+                TextColor="Brown"
+                FontSize="25"
+                BorderColor="White"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                x:Name="coffeeButton"
+                Clicked="coffeeButton_Clicked"/>
+        </Frame>
+         <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Button
+                Text="Hot Drinks"
+                TextColor="Brown"
+                BorderColor="White"
+                FontSize="25"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                x:Name="hotcoffee"
+                Clicked="hotcoffeeButton_Clicked"/>
+        </Frame>
+         <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Button
+                Text="Cold Drinks"
+                TextColor="Brown"
+                FontSize="25"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                x:Name="coldDrinks"
+                Clicked="coldDrinks_Clicked"/>
+        </Frame>
+         <Frame BackgroundColor="Wheat" Padding="10" CornerRadius="10">
+            <Button
+                Text="Quick Bites"
+                TextColor="Brown"
+                FontSize="25"
+                BackgroundColor="Transparent"
+                FontAttributes="Bold"
+                x:Name="quickBites"
+                Clicked="quickBites_Clicked"/>
+        </Frame>
+      
+    </StackLayout>
+  </ContentPage>
+  <ContentPage Title="About" BackgroundColor="Wheat">
+      <StackLayout>
+         <Grid>
+             <Grid.RowDefinitions>
+                 <RowDefinition Height="Auto"></RowDefinition>
+                 <RowDefinition Height="Auto"></RowDefinition>
+                 <RowDefinition Height="*"></RowDefinition>
+             </Grid.RowDefinitions>
+             <Image
+                Source="julesabout.jpeg"
+                VerticalOptions="CenterAndExpand"
+                HeightRequest="255"
+                Margin="0,0,0,0"/>
+             
+         </Grid>
+   
+            <Label Text="Jules Caffee" 
+                   Margin="20,-10,0,0"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+          <Label Text="4A Kent Street"
+                  Margin="20,0"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="Newmarket"
+                  Margin="20,-10"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="Auckland"
+                  Margin="20,0"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Label Text="1023"
+                 Margin="20,-10"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+           <Label Text="+64 9 444 5555"
+                 Margin="20,15"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+          <Label Text="info@julescaffee.co.nz"
+                 Margin="20,10"
+                  FontSize="15"
+                  FontAttributes="Bold"
+                   TextColor="Black"/>
+
+          <StackLayout Grid.Row="1" Orientation="Horizontal">
+          <Image
+                Source="facebook.png"
+                VerticalOptions="CenterAndExpand"
+                HeightRequest="50"
+                Margin="20,0,0,0"/>
+            <Image
+                Source="insta.png"
+                 Margin="0,0,0,0"
+                HeightRequest="50"/>
+        </StackLayout>
+      </StackLayout>
+  </ContentPage>
+  <ContentPage Title="Map">
+      <StackLayout>
+          <WebView Source="https://goo.gl/maps/RQP7vLiJPBnLPxbXA"
+                   VerticalOptions="FillAndExpand"></WebView>
+      </StackLayout>
+  </ContentPage>
+</TabbedPage>

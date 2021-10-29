@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeeShop.MainPage">
+
+    <StackLayout>
+         <Frame BackgroundColor="SandyBrown" VerticalOptions="CenterAndExpand">
+            <Image
+                Source="logo.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+        </Frame>
+
+        <!--Coffee Choices Buttons-->
+
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Button
+                Text="Espresso"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="Transparent"
+                x:Name="coffeeButton"
+                Clicked="coffeeButton_Clicked"/>
+        </Frame>
+         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Button
+                Text="Hot Drinks"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="Transparent"/>
+        </Frame>
+         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Button
+                Text="Cold Drinks"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="Transparent"/>
+        </Frame>
+         <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Button
+                Text="Quick Bites"
+                TextColor="White"
+                FontSize="30"
+                BackgroundColor="Transparent"/>
+        </Frame>
+      
+    </StackLayout>
+
+</ContentPage>

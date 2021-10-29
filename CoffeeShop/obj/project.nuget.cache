@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "X8W+QVxCE/u2r3JV0Ae6Qa0y4hYuevDj2bWlXQgQ6xbVQ37JQL7e0x/la+ZYm24V3SmULzpmqE1GddbBe0cRTw==",
+  "success": true,
+  "projectFilePath": "/Users/dyanncameron/Xamarin/CoffeeShop/CoffeeShop/CoffeeShop/CoffeeShop.csproj",
+  "expectedPackageFiles": [
+    "/Users/dyanncameron/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/dyanncameron/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/dyanncameron/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/dyanncameron/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/dyanncameron/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
